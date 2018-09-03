@@ -6,6 +6,7 @@
     <meta name="keywords" content="Hoja de vida,Julio,Roberto,Cordon,Arevalo,CV,Curriculum">
     <meta name="author" content="Julio Roberto Cordon Arevalo">
     <link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="all">
+
     <title>Hoja de Vida Digital</title>
   </head>
   <body style="font-family: 'Arial', sans-serif;">
@@ -82,16 +83,73 @@
     </header>
     <br>
     <section id="Contenido">
-      <h2>Informaci&oacute;n Personal</h2>
-      <img src="images/logo.svg" alt="Logotipo" title="Logotipo" width="200">
-      <p align="justify">
-        Entusiasta y bien organizado, con sólida formación y experiencia en Análisis, Diseño y Ejecución de proyectos de Software y Hardware. Acostumbrado a trabajar en equipo y bajo presión, en base a objetivos y resultados. Con experiencia en la resolución de problemas, gestión de las funciones diarias de la oficina y manejo de personal. Detallista, autodidacta, creativo, con capacidad analítica y con iniciativa, capaz de generar empatía con cualquier equipo de trabajo mediante una buena comunicación.
-        <br/><br/>
-        Objetivos:
-        Convertirme en Profesional en el área de Ingeniería en Sistemas mediante el aprendizaje continuo, que me permita aportar conocimiento y experiencia en los productos o servicios de la empresa, reduciendo costos y optimizando recursos.
-      </p>
+      <h2>Educaci&oacute;n</h2>
+      <table width="100%" border="1">
+        <thead>
+          <tr>
+            <th>Año</th>
+            <th>Instituci&oacute;n</th>
+            <th>Lugar</th>
+            <th>¿Culmino?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1997</td>
+            <td>Colegio Mixto Betanzos</td>
+            <td>Guatemala</td>
+            <td>Primaria</td>
+          </tr>
+          <tr>
+            <td>1999</td>
+            <td>INBC</td>
+            <td>Guatemala</td>
+            <td>Bachillerato</td>
+          </tr>
+          <tr>
+            <td>2004</td>
+            <td>USAC</td>
+            <td>Guatemala</td>
+            <td>Ingenier&iacute;a</td>
+          </tr>
+          <tr>
+            <td>2010</td>
+            <td>UMG</td>
+            <td>Guatemala</td>
+            <td>Inform&aacute;tica</td>
+          </tr>
+        </tbody>
+      </table>
       <br>
     </section>
+    <section id="formulario">
+      <h2>Agregar Estudios</h2><br>
+      <form  action="educacion.html" method="post">
+        <label for="anio">A&ntilde;o</label>
+	        <select name="anio">
+    				<option value="1">2011</option>
+    				<option value="2">2012</option>
+    				<option value="3">2013</option>
+            <option value="4">2014</option>
+    				<option value="5">2015</option>
+    				<option value="6">2016</option>
+            <option value="7">2017</option>
+    				<option value="8">2018</option>
+		     </select>
+         <br><br>
+        <label for="institucion">Instituci&oacute;n</label>
+        <input type="text" name="institucion" value="" required>
+        <br><br>
+        <label for="lugar" >Lugar</label>
+        <textarea name="lugar" id="lugar" cols="30" rows="3" required></textarea>
+        <br> <br>
+        <p>
+			     <input type="submit" value="Enviar">
+		    </p>
+        <br>
+      </form>
+    </section>
+
     <footer style="background-color:black;color:white;margin-bottom:0px;height:150px;">
       <center>
         <br>
